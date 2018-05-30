@@ -23,6 +23,13 @@ from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Embedding
 from keras.layers import Conv2D, GlobalAveragePooling2D, MaxPooling2D
 
+from clusterone import get_data_path, get_logs_path
+
+
+#ClusterOne
+
+logs_path = get_logs_path('~/Documents/tf_logs/')
+
 # logging for gensim (set to INFO)
 import logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
@@ -72,7 +79,7 @@ model.add(Dense(num_classes, activation='softmax'))
 epochs = 25
 
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-print(model.summary())
+#print(model.summary())
 
 # Fit the model
 model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=epochs, batch_size=32)
