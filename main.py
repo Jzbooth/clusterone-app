@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import random
 from matplotlib import pyplot as plt
-%matplotlib inline
+#%matplotlib inline
 
 import keras
 np.random.seed(13)
@@ -28,7 +28,7 @@ from clusterone import get_data_path, get_logs_path
 
 #ClusterOne
 
-logs_path = get_logs_path('~/Documents/tf_logs/')
+#logs_path = get_logs_path('~/Documents/tf_logs/')
 
 # logging for gensim (set to INFO)
 import logging
