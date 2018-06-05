@@ -1,11 +1,8 @@
 import pandas as pd 
 import numpy as np
-import random
 
 import keras
-np.random.seed(13)
 from keras.models import Sequential
-from IPython.display import SVG
 from keras.utils import np_utils
 from keras.utils.data_utils import get_file
 from keras.datasets import cifar10
