@@ -2,3 +2,4 @@ pandas==0.20.3
 numpy==1.14.1
 Keras==2.0.9
 clusterone==0.10.9
+tensorflow==1.6
